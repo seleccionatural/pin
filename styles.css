@@ -64,6 +64,7 @@ main {
     height: auto;
     display: block;
     border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer to indicate clickable */
 }
 
 footer {
@@ -88,6 +89,46 @@ footer {
     color: #000;
 }
 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    backdrop-filter: blur(5px); /* Blurred background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
+    border-radius: 15px; /* Rounded corners */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @media (max-width: 1200px) {
     .grid {
         column-count: 4;
@@ -105,3 +146,4 @@ footer {
         column-count: 2;
     }
 }
+

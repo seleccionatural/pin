@@ -29,4 +29,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Append shuffled photos back to the grid
     photos.forEach(photo => grid.appendChild(photo));
+
+
+// Modal functionality
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImage");
+const closeBtn = document.getElementsByClassName("close")[0];
+
+grid.addEventListener("click", function(event) {
+    if (event.target.tagName === "IMG") {
+        modal.style.display = "flex";
+        modalImg.src = event.target.src;
+    }
+});
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
 });
