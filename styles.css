@@ -69,24 +69,23 @@ main {
 footer {
     /*background-color: #ffffff;*/
     text-align: center;
-    width: 90%;
-    margin: auto;5
-    font-size: 10%; /* Increased font size */
+    width: 98%;
+    margin: auto;
+    font-size: 80%; /* Increased font size */
 }
 
 .footer-content {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .footer-content p {
-    margin: 5% 0;
+    margin: 2% 0;
 }
 
 .social-media a {
-    margin: 0 20px ;
+    margin: 0 50px ;
     text-decoration: none;
     color: #000;
-
 }
 
 @media (max-width: 1200px) {
