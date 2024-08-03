@@ -19,12 +19,12 @@ header {
 }
 
 .header-image.left {
-    width: 500px; /* Adjust size as needed */
+    width:8%; /* Adjust size as needed */
     height: auto;
 }
 
 .header-image.right {
-    width: 250px; /* Adjust size as needed */
+    width: 4%; /* Adjust size as needed */
     height: auto;
 }
 
